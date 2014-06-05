@@ -44,10 +44,17 @@ $(window).scroll(function () {
 scrollPos = $(this).scrollTop();
 
 jogaParalax = -scrollPos * 0.8;
+jogaOpacity = scrollPos;
 
 //EFEITO PARALLAX
     $(".banner").css({
       "background-position" : "center "+jogaParalax+"px"
       //"top" : +(scrollPos/10)+"px"
     }); 
+
+    $(".banner h2").css({
+
+        "opacity" : '150'
+
+    });
 });
